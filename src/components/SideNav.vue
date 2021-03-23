@@ -34,7 +34,7 @@ export default {
 #side-nav {
     border-right: 1px solid #e0e0e0;
     height: 100vh;
-    width: 15vw;
+    width: 15rem;
     padding: 1rem 2rem 1rem 5rem;
 }
 
