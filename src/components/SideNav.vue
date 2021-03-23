@@ -39,7 +39,7 @@ export default {
 }
 
 .nav-header {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     margin-bottom: 2.5rem;
     color: #4b19d6;
     text-align: center;
