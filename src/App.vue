@@ -8,6 +8,7 @@
                 <ProfileDropdown />
             </div>
             <Filters />
+            <People />
         </div>
     </div>
 </template>
@@ -18,10 +19,12 @@ import SearchBar from "./components/widgets/SearchBar";
 import Notifications from "./components/Notifications";
 import ProfileDropdown from "./components/ProfileDropdown";
 import Filters from "./components/Filters";
+import People from "./components/People";
 
 export default {
     name: 'App',
     components: {
+        People,
         Filters,
         ProfileDropdown,
         Notifications,

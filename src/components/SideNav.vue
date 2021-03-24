@@ -34,13 +34,13 @@ export default {
 #side-nav {
     border-right: 1px solid #e0e0e0;
     min-height: 100vh;
-    width: 15rem;
-    padding: 1rem 2rem 1rem 5rem;
+    width: 400px;
+    padding: 20px 40px 20px 100px;
 }
 
 .nav-header {
-    margin-top: 2rem;
-    margin-bottom: 2.5rem;
+    margin-top: 30px;
+    margin-bottom: 40px;
     color: #4b19d6;
     text-align: center;
 
@@ -50,7 +50,7 @@ export default {
 }
 
 .nav-group {
-    margin-top: 0.75rem;
+    margin-top: 15px;
     .nav-group-title {
         padding: 15px 30px;
     }
