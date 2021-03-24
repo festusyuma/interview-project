@@ -16,9 +16,10 @@ export default {
 #search-input-cover {
     border-radius: 0.5rem;
     padding: 15px 30px;
-    margin: 1rem;
+    margin: 0 1rem;
     box-shadow: 0 2px 15px 5px #e0e0e0;
     display: flex;
+    flex-grow: 1;
 }
 
 i {
