@@ -37,8 +37,19 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #profile {
     margin: 0 .5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .dropdown-title {
+        .profile-img {
+            margin-right: 0;
+        }
+        .dropdown-title-text {
+            display: none;
+        }
+    }
 }
 </style>

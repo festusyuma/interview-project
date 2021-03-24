@@ -3,7 +3,7 @@
         <div class="nav-header" >
             <h1>
                 <span class="nav-header-icon" ><i class="fas fa-cube"></i></span>
-                bluecube
+                <span class="nav-header-text" >bluecube</span>
             </h1>
         </div>
         <NavLink icon="fas fa-home" title="Home" link="" class="active" />
@@ -67,6 +67,24 @@ export default {
         .nav-header-icon {
             padding-right: 5px;
         }
+    }
+}
+
+@media screen and (max-width: 986px) {
+    #side-nav {
+        min-width: 50px;
+    }
+
+    .nav-header {
+        font-size: .7rem;
+
+        .nav-header-text {
+            display: none;
+        }
+    }
+
+    .nav-group-title {
+        display: none;
     }
 }
 </style>

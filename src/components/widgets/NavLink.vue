@@ -58,4 +58,13 @@ export default {
         padding: 10px;
     }
 }
+
+@media screen and (max-width: 986px) {
+    .nav-link {
+        text-align: center;
+
+        .nav-link-icon { padding-right: 0; }
+        a { display: none;}
+    }
+}
 </style>
