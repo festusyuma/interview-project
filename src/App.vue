@@ -67,7 +67,7 @@ export default {
     position: absolute;
     top: 0;
     width: 15em;
-    margin-top: 120%;
+    margin-top: 5rem;
     background: #ffffff;
     box-shadow: 0 2px 5px #e0e0e0;
     display: none;
@@ -89,6 +89,10 @@ export default {
 .dropdown-items:after {
     border: 10px solid transparent;
     border-bottom-color: #ffffff;
+}
+
+.dropdown-item:hover {
+    background: #f9f9f9;
 }
 
 .dropdown-title:hover {

@@ -95,6 +95,10 @@ export default {
             }
         }
 
+        .notification:hover {
+            cursor: pointer;
+        }
+
         i {
             margin-left: 10px;
         }
