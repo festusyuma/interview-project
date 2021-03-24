@@ -56,6 +56,8 @@ export default {
             position: absolute;
             bottom: 0;
             color: #ffffff;
+            background: #00000014;
+            box-shadow: 0 -2px 10px #00000014;
             left: 0;
             right: 0;
             padding: 15px;
