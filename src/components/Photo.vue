@@ -1,9 +1,12 @@
 <template>
     <div class="person-cover" >
         <div class="person" >
+            <div class="person-image-cover">
+                <img :src="photo.img" alt="" >
+            </div>
             <div class="details" >
-                <p class="name-age" >Festus, 34</p>
-                <small class="location" ><i class="fas fa-map-marker-alt" ></i> New york</small>
+                <p class="name-age" >{{ photo.firstName }}, {{ photo.age }}</p>
+                <small class="location" ><i class="fas fa-map-marker-alt" ></i> {{ photo.location }}</small>
                 <div class="like-dislike" >
                     <div class="like-btn" ><i class="far fa-heart" ></i></div>
                     <div class="dislike-btn" ><i class="far fa-thumbs-down" ></i></div>
@@ -15,9 +18,9 @@
 
 <script>
 export default {
-    name: "Person",
+    name: "Photo",
     props: {
-        person: Object
+        photo: Object
     }
 }
 </script>
@@ -31,7 +34,23 @@ export default {
         width: 175px;
         padding-top: 156.25%;
         border-radius: 0.5rem;
-        box-shadow: 0 0 15px #efefef;
+        box-shadow: 0 0 10px #efefef;
+
+        .person-image-cover {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: red;
+            border-radius: .5rem;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
 
         .details {
             position: absolute;
@@ -42,7 +61,7 @@ export default {
             padding: 15px;
             border-bottom-left-radius: .5rem;
             border-bottom-right-radius: .5rem;
-            transition: all 0.3s;
+            transition: all 0.1s;
 
             .name-age {
                 font-size: 1rem;
@@ -81,7 +100,8 @@ export default {
     .person:hover {
         .details {
             background: #ffffff;
-            bottom: -25px;
+            bottom: -35px;
+            box-shadow: 0 10px 10px #efefef;
 
             .name-age {
                 color: #4b19d6;
