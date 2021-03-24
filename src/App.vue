@@ -1,15 +1,20 @@
 <template>
     <div id="app">
         <SideNav />
+        <div id="content" >
+            <SearchBar />
+        </div>
     </div>
 </template>
 
 <script>
 import SideNav from "./components/SideNav";
+import SearchBar from "./components/widgets/SearchBar";
 
 export default {
     name: 'App',
     components: {
+        SearchBar,
         SideNav
     }
 }
@@ -22,5 +27,9 @@ export default {
     padding: 0;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+}
+
+#app {
+    display: flex;
 }
 </style>
