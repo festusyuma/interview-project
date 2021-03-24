@@ -2,7 +2,7 @@ function formatBody(body) {
     return body.map(r => {
         return {
             id: r.id,
-            img: r.links.html,
+            img: r.urls.thumb,
             firstName: r.user.first_name,
             location: r.user.location,
             age: r.user.total_photos
@@ -24,6 +24,7 @@ const actions = {
         fetch('https://api.unsplash.com//photos?client_id=qslzK0CGEIhsydOuy0Zpo2uctS0lWJxQ_kHwpmpVOdc')
         .then(res => {
             res.json().then(body => {
+                console.log(body)
                 const pictures = formatBody(body)
                 commit('setPictures', pictures)
             })

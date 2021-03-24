@@ -27,12 +27,12 @@ export default {
 
 <style lang="scss" scoped>
 .person-cover {
-    padding: 0 11px 50px 11px;
+    padding: 0 7.5px 50px 7.5px;
 
     .person {
         position: relative;
-        width: 175px;
-        padding-top: 156.25%;
+        width: 200px;
+        height: 300px;
         border-radius: 0.5rem;
         box-shadow: 0 0 10px #efefef;
 

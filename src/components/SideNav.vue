@@ -35,7 +35,7 @@ export default {
     border-right: 1px solid #e0e0e0;
     min-height: 100vh;
     width: 400px;
-    padding: 20px 40px 20px 100px;
+    padding: 20px 40px 20px 50px;
 }
 
 .nav-header {

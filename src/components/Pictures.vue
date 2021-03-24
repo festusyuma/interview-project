@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 #people-cover {
-    padding: 15px 30px;
+    padding: 15px 15px;
     margin-top: 10px;
 
     display: flex;
