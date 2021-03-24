@@ -6,7 +6,7 @@
             </i>
         </div>
         <div class="dropdown-items" :class="{'show': dropdownIsActive}" >
-            <div class="dropdown-item" v-for="notification in allNotifications" :key="notification.id" >
+            <div class="dropdown-item seen" v-for="notification in allNotifications" :key="notification.id" >
                 <div class="image" ></div>
                 <div class="notification" >
                     <p>{{notification.notification}}</p>
@@ -59,31 +59,45 @@ export default {
         left: 5.75rem;
     }
 
-    .dropdown-item {
-        display: flex;
-        align-items: center;
-        padding: 1rem;
-        border-bottom: 1px solid #e0e0e0;
-
-        .notification {
-            flex-grow: 1;
-
-            p{
-                color: #4b19d6;
-            }
-
-            small {
-                color: #737373;
-            }
-        }
-    }
-
     .fa-heart {
         color: red;
     }
 
     .fa-comment-alt {
         color: #4b19d6;
+    }
+
+    .dropdown-item {
+        display: flex;
+        align-items: center;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid #e0e0e0;
+
+        .image {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #737373;
+            margin-right: 10px;
+        }
+
+        .notification {
+            flex-grow: 1;
+
+            p{
+                color: #4b19d6;
+                font-size: .85rem;
+            }
+
+            small {
+                color: #737373;
+                font-size: .8rem;
+            }
+        }
+
+        i {
+            margin-left: 10px;
+        }
     }
 }
 </style>
