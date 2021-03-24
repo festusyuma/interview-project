@@ -2,7 +2,7 @@
     <div class="dropdown" id="profile" >
         <div class="dropdown-title" @click="toggleDropdown" >
             <div class="profile-img" >
-                <span class="badge bg-green" ></span>
+                <span class="badge bg-active" ></span>
             </div>
             <p class="dropdown-title-text" >Festusyuma</p>
             <i class="fas fa-angle-down dropdown-icon" ></i>
