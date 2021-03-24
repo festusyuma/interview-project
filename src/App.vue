@@ -66,7 +66,6 @@ export default {
 .dropdown-items {
     position: absolute;
     top: 0;
-    left: -2.5rem;
     width: 15em;
     margin-top: 120%;
     background: #ffffff;
@@ -83,13 +82,11 @@ export default {
     content: '';
     position: absolute;
     bottom: 100%;
-    left: 3rem;
     border: 11px solid transparent;
     border-bottom-color: #e0e0e0;
 }
 
 .dropdown-items:after {
-    left: 3rem;
     border: 10px solid transparent;
     border-bottom-color: #ffffff;
 }

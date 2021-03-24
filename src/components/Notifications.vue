@@ -7,7 +7,13 @@
         </div>
         <div class="dropdown-items" :class="{'show': dropdownIsActive}" >
             <div class="dropdown-item" v-for="notification in allNotifications" :key="notification.id" >
-                {{notification.notification}}
+                <div class="image" ></div>
+                <div class="notification" >
+                    <p>{{notification.notification}}</p>
+                    <small>{{notification.time}}</small>
+                </div>
+                <i class="fas fa-heart" v-if="notification.type === 'like'" ></i>
+                <i class="fas fa-comment-alt" v-if="notification.type === 'comment'" ></i>
             </div>
         </div>
     </div>
@@ -41,6 +47,43 @@ export default {
         font-size: 2rem;
         position: relative;
         margin-right: 15px;
+    }
+
+    .dropdown-items {
+        left: -5rem;
+        width: 20rem;
+    }
+
+    .dropdown-items:before,
+    .dropdown-items:after {
+        left: 5.75rem;
+    }
+
+    .dropdown-item {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        border-bottom: 1px solid #e0e0e0;
+
+        .notification {
+            flex-grow: 1;
+
+            p{
+                color: #4b19d6;
+            }
+
+            small {
+                color: #737373;
+            }
+        }
+    }
+
+    .fa-heart {
+        color: red;
+    }
+
+    .fa-comment-alt {
+        color: #4b19d6;
     }
 }
 </style>
