@@ -7,7 +7,9 @@
         </div>
         <div class="dropdown-items" :class="{'show': dropdownIsActive}" >
             <div class="dropdown-item seen" v-for="notification in allNotifications" :key="notification.id" >
-                <div class="image" ></div>
+                <div class="image" >
+                    <img :src="notification.img" alt="" />
+                </div>
                 <div class="notification" >
                     <p>{{notification.notification}}</p>
                     <small>{{notification.time}}</small>
@@ -78,6 +80,12 @@ export default {
             border-radius: 50%;
             background: #737373;
             margin-right: 10px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
 
         .notification {
