@@ -1,22 +1,25 @@
 const state = {
     notifications: [
         {
-            notifications: "",
+            id: 1,
+            notification: "Michael liked you",
             type: "like",
             img: "",
-            time: "",
+            time: "20 minutes ago",
         },
         {
-            notifications: "",
+            id: 2,
+            notification: "Jack liked you",
             type: "like",
             img: "",
-            time: "",
+            time: "30 minutes ago",
         },
         {
-            notifications: "",
+            id: 3,
+            notification: "Martin commented on your photo",
             type: "comment",
             img: "",
-            time: "",
+            time: "58 minutes ago",
         },
     ]
 }

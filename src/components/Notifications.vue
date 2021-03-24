@@ -6,16 +6,19 @@
             </i>
         </div>
         <div class="dropdown-items" >
-            <div class="notification-dropdown-item" >
-
+            <div class="notification-dropdown-item" v-for="notification in allNotifications" :key="notification.id" >
+                {{notification.notification}}
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import {mapGetters} from 'vuex'
+
 export default {
     name: "Notifications",
+    computed: mapGetters(['allNotifications']),
     data() {
         return {
             

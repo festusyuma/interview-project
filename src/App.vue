@@ -44,6 +44,7 @@ export default {
 #content {
     flex-grow: 1;
     padding: 1rem;
+    background: #f8f8f8;
 }
 
 #search-and-profile {
@@ -52,10 +53,24 @@ export default {
     align-items: center;
 }
 
+.dropdown {
+    position: relative;
+}
+
 .dropdown-title {
     padding: 5px 10px;
     display: flex;
     align-items: center;
+}
+
+.dropdown-items {
+    position: absolute;
+    top: 0;
+    left: -2.5rem;
+    width: 15em;
+    margin-top: 100%;
+    border: 1px solid #393939;
+    background: #ffffff;
 }
 
 .dropdown-title:hover {
