@@ -5,15 +5,7 @@
             <div id="search-and-profile" >
                 <SearchBar />
                 <Notifications />
-                <div class="dropdown" id="profile" >
-                    <div class="dropdown-title" >
-                        <div class="profile-img" >
-                            <span class="badge bg-green" ></span>
-                        </div>
-                        <p class="dropdown-title-text" >Festusyuma</p>
-                        <i class="fas fa-angle-down dropdown-icon" ></i>
-                    </div>
-                </div>
+                <ProfileDropdown />
             </div>
         </div>
     </div>
@@ -23,10 +15,12 @@
 import SideNav from "./components/SideNav";
 import SearchBar from "./components/widgets/SearchBar";
 import Notifications from "./components/Notifications";
+import ProfileDropdown from "./components/ProfileDropdown";
 
 export default {
     name: 'App',
     components: {
+        ProfileDropdown,
         Notifications,
         SearchBar,
         SideNav
