@@ -5,12 +5,22 @@
                 <span class="badge bg-red" >4</span>
             </i>
         </div>
+        <div class="dropdown-items" >
+            <div class="notification-dropdown-item" >
+
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: "Notifications"
+    name: "Notifications",
+    data() {
+        return {
+            
+        }
+    }
 }
 </script>
 
