@@ -68,9 +68,25 @@ export default {
     top: 0;
     left: -2.5rem;
     width: 15em;
-    margin-top: 100%;
-    border: 1px solid #393939;
+    margin-top: 120%;
     background: #ffffff;
+    box-shadow: 0 2px 5px #e0e0e0;
+}
+
+.dropdown-items:before,
+.dropdown-items:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 3rem;
+    border: 11px solid transparent;
+    border-bottom-color: #e0e0e0;
+}
+
+.dropdown-items:after {
+    left: 3rem;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
 }
 
 .dropdown-title:hover {

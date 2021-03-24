@@ -6,7 +6,7 @@
             </i>
         </div>
         <div class="dropdown-items" >
-            <div class="notification-dropdown-item" v-for="notification in allNotifications" :key="notification.id" >
+            <div class="dropdown-item" v-for="notification in allNotifications" :key="notification.id" >
                 {{notification.notification}}
             </div>
         </div>
