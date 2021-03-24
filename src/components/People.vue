@@ -26,7 +26,7 @@ export default {
     padding: 15px 30px;
     margin-top: 10px;
 
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
 }
 </style>
