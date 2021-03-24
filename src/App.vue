@@ -4,13 +4,7 @@
         <div id="content" >
             <div id="search-and-profile" >
                 <SearchBar />
-                <div class="dropdown" id="notification" >
-                    <div class="dropdown-title" >
-                        <i class="fas fa-bell" id="notification-icon" >
-                            <span class="badge bg-red" >4</span>
-                        </i>
-                    </div>
-                </div>
+                <Notifications />
                 <div class="dropdown" id="profile" >
                     <div class="dropdown-title" >
                         <div class="profile-img" >
@@ -28,10 +22,12 @@
 <script>
 import SideNav from "./components/SideNav";
 import SearchBar from "./components/widgets/SearchBar";
+import Notifications from "./components/Notifications";
 
 export default {
     name: 'App',
     components: {
+        Notifications,
         SearchBar,
         SideNav
     }
@@ -63,7 +59,7 @@ export default {
 }
 
 .dropdown-title {
-    padding: 5px 20px;
+    padding: 5px 10px;
     display: flex;
     align-items: center;
 }
@@ -75,13 +71,6 @@ export default {
 .dropdown-icon {
     color: #393939;
     margin-left: 10px;
-}
-
-#notification-icon {
-    color: #4b19d6;
-    font-size: 2rem;
-    position: relative;
-    margin-right: 15px;
 }
 
 #profile .dropdown-title-text {
