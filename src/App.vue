@@ -71,6 +71,11 @@ export default {
     margin-top: 120%;
     background: #ffffff;
     box-shadow: 0 2px 5px #e0e0e0;
+    display: none;
+}
+
+.dropdown-items.show {
+    display: block;
 }
 
 .dropdown-items:before,

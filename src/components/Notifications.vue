@@ -1,11 +1,11 @@
 <template>
     <div class="dropdown" id="notification" >
-        <div class="dropdown-title" >
+        <div class="dropdown-title" @click="toggleDropdown" >
             <i class="fas fa-bell" id="notification-icon" >
                 <span class="badge bg-red" >4</span>
             </i>
         </div>
-        <div class="dropdown-items" >
+        <div class="dropdown-items" :class="{'show': dropdownIsActive}" >
             <div class="dropdown-item" v-for="notification in allNotifications" :key="notification.id" >
                 {{notification.notification}}
             </div>
@@ -21,7 +21,12 @@ export default {
     computed: mapGetters(['allNotifications']),
     data() {
         return {
-            
+            dropdownIsActive: false
+        }
+    },
+    methods: {
+        toggleDropdown() {
+            this.dropdownIsActive = !this.dropdownIsActive
         }
     }
 }
