@@ -26,9 +26,6 @@ export default {
 </script>
 
 <style scoped>
-#container {
-    text-align: center;
-}
 
 #people-cover {
     padding: 15px 15px;
@@ -36,5 +33,7 @@ export default {
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
+
 </style>

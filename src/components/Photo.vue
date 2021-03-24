@@ -31,8 +31,8 @@ export default {
 
     .person {
         position: relative;
-        width: 12.75rem;
-        height: 17rem;
+        width: 11.25rem;
+        height: 15rem;
         border-radius: 0.5rem;
         box-shadow: 0 0 10px #efefef;
 
