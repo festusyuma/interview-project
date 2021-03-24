@@ -27,7 +27,7 @@ const actions = {
             })
         })
         .catch(err => console.log(err))
-    }
+    },
 }
 
 const mutations = {
