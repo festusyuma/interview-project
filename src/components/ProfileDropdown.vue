@@ -7,7 +7,7 @@
             <p class="dropdown-title-text" >Festusyuma</p>
             <i class="fas fa-angle-down dropdown-icon" ></i>
         </div>
-        <div class="dropdown-items" :class="{'show': dropdownIsActive}" >
+<!--    <div class="dropdown-items" :class="{'show': dropdownIsActive}" >
             <div class="dropdown-item seen">
                 <p>this is one</p>
             </div>
@@ -17,7 +17,7 @@
             <div class="dropdown-item seen">
                 <p>this is three</p>
             </div>
-        </div>
+        </div>-->
     </div>
 </template>
 
