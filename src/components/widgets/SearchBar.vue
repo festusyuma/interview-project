@@ -18,10 +18,13 @@ export default {
     padding: 15px 30px;
     margin: 1rem;
     box-shadow: 0 2px 15px 5px #e0e0e0;
+    display: flex;
 }
 
 i {
     color: #737373;
+    font-size: 1.5rem;
+    align-self: center;
 }
 
 .search-input {
@@ -31,6 +34,8 @@ i {
     box-shadow: none;
     color: #393939;
     margin: 0 1rem;
+    flex-grow: 1;
+    padding: 0 15px;
 }
 
 .btn {

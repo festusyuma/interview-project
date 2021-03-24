@@ -2,7 +2,9 @@
     <div id="app">
         <SideNav />
         <div id="content" >
-            <SearchBar />
+            <div id="search-and-profile" >
+                <SearchBar />
+            </div>
         </div>
     </div>
 </template>
@@ -31,5 +33,9 @@ export default {
 
 #app {
     display: flex;
+}
+
+#content {
+    flex-grow: 1;
 }
 </style>
