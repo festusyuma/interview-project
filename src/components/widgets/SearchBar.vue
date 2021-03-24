@@ -1,12 +1,14 @@
 <template>
-    <div id="search-input-cover" >
+    <form @submit.prevent="searchPhoto(query)" id="search-input-cover" >
         <i class="fas fa-search" ></i>
-        <input type="text" placeholder="Find something..." title="search" class="search-input" >
-        <button type="button" class="btn search-btn" >Search</button>
-    </div>
+        <input type="text" placeholder="Find something..." title="search" class="search-input" v-model="query" >
+        <button type="button" class="btn search-btn" @click="searchPhoto(query)" >Search</button>
+    </form>
 </template>
 
 <script>
+import {mapActions} from 'vuex'
+
 export default {
     name: "SearchBar",
     data() {
@@ -14,6 +16,7 @@ export default {
             query: "",
         }
     },
+    methods: mapActions(['searchPhoto'])
 }
 </script>
 

@@ -33,11 +33,12 @@ const actions = {
     },
 
     async searchPhoto({commit}, query) {
-        fetch(`https://api.unsplash.com/search/photos?query=${query}&client_id=qslzK0CGEIhsydOuy0Zpo2uctS0lWJxQ_kHwpmpVOdc`)
+        console.log(query)
+
+        fetch(`https://api.unsplash.com/search/photos?query=${query}&orientation=portrait&client_id=qslzK0CGEIhsydOuy0Zpo2uctS0lWJxQ_kHwpmpVOdc`)
         .then(res => {
             res.json().then(body => {
-                console.log(body)
-                const pictures = formatBody(body)
+                const pictures = formatBody(body.results)
                 commit('setPictures', pictures)
             })
         })
