@@ -145,4 +145,11 @@ export default {
 .bg-green { background: green }
 .bg-active { background: #13ba13 }
 .bg-red { background: red }
+
+@media screen and (max-width: 768px) {
+    #search-and-profile {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}
 </style>
