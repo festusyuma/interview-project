@@ -102,6 +102,11 @@ export default {
 
     #filters {
         display: flex;
+        flex-wrap: wrap;
+
+        .filter {
+            margin-bottom: 10px;
+        }
     }
 }
 </style>

@@ -34,7 +34,7 @@ export default {
 #side-nav {
     border-right: 1px solid #e0e0e0;
     min-height: 100vh;
-    width: 400px;
+    min-width: 200px;
     padding: 20px 40px 20px 50px;
 }
 
@@ -53,6 +53,20 @@ export default {
     margin-top: 15px;
     .nav-group-title {
         padding: 15px 30px;
+    }
+}
+
+@media screen and (max-width: 1207px) {
+    #side-nav {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .nav-header {
+        font-size: .7rem;
+
+        .nav-header-icon {
+            padding-right: 5px;
+        }
     }
 }
 </style>

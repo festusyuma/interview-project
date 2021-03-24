@@ -31,8 +31,8 @@ export default {
 
     .person {
         position: relative;
-        width: 200px;
-        height: 300px;
+        width: 12.75rem;
+        height: 17rem;
         border-radius: 0.5rem;
         box-shadow: 0 0 10px #efefef;
 
@@ -114,6 +114,15 @@ export default {
             .like-dislike {
                 display: flex;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1228px) {
+    .person-cover {
+        .person {
+            width: 9.75rem;
+            height: 13rem;
         }
     }
 }

@@ -1,6 +1,8 @@
 <template>
-    <div id="people-cover" >
-        <Photo v-for="photo in allPictures" :key="photo.id" :photo="photo" />
+    <div id="container" >
+        <div id="people-cover" >
+            <Photo v-for="photo in allPictures" :key="photo.id" :photo="photo" />
+        </div>
     </div>
 </template>
 
@@ -24,6 +26,10 @@ export default {
 </script>
 
 <style scoped>
+#container {
+    text-align: center;
+}
+
 #people-cover {
     padding: 15px 15px;
     margin-top: 10px;

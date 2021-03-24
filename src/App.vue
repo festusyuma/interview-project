@@ -44,7 +44,7 @@ export default {
 }
 
 #app {
-    display: flex;
+    display: inline-flex;
 }
 
 #content {

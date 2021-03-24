@@ -52,4 +52,10 @@ export default {
         color: #4b19d6;
     }
 }
+
+@media screen and (max-width: 1130px) {
+    .nav-link {
+        padding: 10px;
+    }
+}
 </style>
