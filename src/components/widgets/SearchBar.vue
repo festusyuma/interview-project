@@ -60,10 +60,10 @@ i {
 .search-btn {
     background: #4b19d6;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 761px) {
     #search-input-cover {
-        order: 2;
-        margin-top: 2rem
+        order: 3;
+        margin: 2rem 0 0;
     }
 }
 </style>

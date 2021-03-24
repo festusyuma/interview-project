@@ -3,6 +3,11 @@
         <SideNav />
         <div id="content" >
             <div id="search-and-profile" >
+                <div class="nav-header-hidden" >
+                    <h1>
+                        <span class="nav-header-text" >bluecube</span>
+                    </h1>
+                </div>
                 <SearchBar />
                 <Notifications />
                 <ProfileDropdown />
@@ -57,6 +62,14 @@ export default {
     display: flex;
     padding: 1rem;
     align-items: center;
+}
+
+.nav-header-hidden {
+    color: #4b19d6;
+    text-align: center;
+    margin-right: auto;
+    font-size: .7rem;
+    display: none;
 }
 
 .dropdown {
@@ -150,6 +163,10 @@ export default {
     #search-and-profile {
         flex-wrap: wrap;
         justify-content: flex-end;
+    }
+
+    .nav-header-hidden {
+        display: block;
     }
 }
 </style>
