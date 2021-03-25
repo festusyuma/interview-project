@@ -72,6 +72,16 @@ export default {
     display: none;
 }
 
+.btn {
+    background: #5d5d5d;
+    color: #fff;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0.5rem;
+}
+
 .dropdown {
     position: relative;
 }
