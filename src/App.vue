@@ -159,7 +159,7 @@ export default {
 .bg-active { background: #13ba13 }
 .bg-red { background: red }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 761px) {
     #search-and-profile {
         flex-wrap: wrap;
         justify-content: flex-end;
@@ -167,6 +167,12 @@ export default {
 
     .nav-header-hidden {
         display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #search-and-profile {
+        padding: 0.25rem;
     }
 }
 </style>

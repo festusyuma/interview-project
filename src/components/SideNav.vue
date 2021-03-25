@@ -58,7 +58,7 @@ export default {
 
 @media screen and (max-width: 1207px) {
     #side-nav {
-        padding: 20px 20px 20px 20px;
+        padding: 20px;
     }
 
     .nav-header {
@@ -85,6 +85,12 @@ export default {
 
     .nav-group-title {
         display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #side-nav {
+        padding: 5px;
     }
 }
 </style>

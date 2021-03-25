@@ -109,4 +109,10 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    #filters-cover {
+        padding: 0.25rem;
+    }
+}
 </style>
