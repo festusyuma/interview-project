@@ -1,8 +1,11 @@
 <template>
     <form @submit.prevent="searchPhoto(query)" id="search-input-cover" >
-        <i class="fas fa-search" ></i>
+        <i class="fas fa-search search-icon" ></i>
         <input type="text" placeholder="Find something..." title="search" class="search-input" v-model="query" >
-        <button type="button" class="btn search-btn" @click="searchPhoto(query)" >Search</button>
+        <button type="button" class="btn search-btn" @click="searchPhoto(query)" >
+            <span class="search-btn-text" >Search</span>
+            <span class="search-btn-icon" ><i class="fas fa-search" ></i></span>
+        </button>
     </form>
 </template>
 
@@ -29,7 +32,7 @@ export default {
     display: flex;
     flex-grow: 1;
 
-    i {
+    .search-icon {
         color: #737373;
         font-size: 1.5rem;
         align-self: center;
@@ -48,6 +51,9 @@ export default {
 
     .search-btn {
         background: #4b19d6;
+        .search-btn-icon {
+            color: #ffffff;
+        }
     }
 }
 
@@ -68,8 +74,12 @@ export default {
         }
     }
 
-    .fa-search {
+    .search-icon {
         display: none;
+    }
+
+    .search-btn {
+        .search-btn-text { display: none }
     }
 }
 </style>
