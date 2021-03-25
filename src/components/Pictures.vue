@@ -52,11 +52,4 @@ export default {
         grid-template-columns: auto auto;
     }
 }
-
-@media screen and (max-width: 450px) {
-    #people-cover {
-        grid-template-columns: auto;
-    }
-}
-
 </style>
