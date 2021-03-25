@@ -185,4 +185,10 @@ export default {
         padding: 0.25rem;
     }
 }
+
+@media screen and (max-width: 500px) {
+    #content {
+        padding: 0.5rem;
+    }
+}
 </style>
