@@ -27,12 +27,11 @@ export default {
 
 <style lang="scss" scoped>
 .person-cover {
-    padding: 0 7.5px 50px 7.5px;
+    padding: 0 15px 50px 15px;
 
     .person {
         position: relative;
-        width: 11.25rem;
-        height: 15rem;
+        padding-top: 140%;
         border-radius: 0.5rem;
         box-shadow: 0 0 10px #efefef;
 
@@ -116,15 +115,6 @@ export default {
             .like-dislike {
                 display: flex;
             }
-        }
-    }
-}
-
-@media screen and (max-width: 1228px) {
-    .person-cover {
-        .person {
-            width: 9.75rem;
-            height: 13rem;
         }
     }
 }

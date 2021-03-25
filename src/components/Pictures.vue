@@ -31,8 +31,32 @@ export default {
     padding: 15px 15px;
     margin-top: 10px;
 
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+@media screen and (max-width: 1200px) {
+    #people-cover {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    #people-cover {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #people-cover {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #people-cover {
+        grid-template-columns: auto;
+    }
 }
 
 </style>

@@ -49,7 +49,7 @@ export default {
 }
 
 #app {
-    display: inline-flex;
+    display: flex;
 }
 
 #content {
