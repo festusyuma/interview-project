@@ -53,7 +53,13 @@ export default {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
+    #people-cover {
+        padding: 0.25rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
     #people-cover {
         grid-template-columns: auto;
     }
