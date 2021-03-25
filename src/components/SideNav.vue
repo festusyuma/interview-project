@@ -33,9 +33,10 @@ export default {
 <style lang="scss" scoped>
 #side-nav {
     border-right: 1px solid #e0e0e0;
-    min-height: 100vh;
+    max-height: 100vh;
     min-width: 200px;
     padding: 20px 40px 20px 50px;
+    overflow-y: auto;
 }
 
 .nav-header {

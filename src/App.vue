@@ -50,12 +50,14 @@ export default {
 
 #app {
     display: flex;
+    height: 100vh;
 }
 
 #content {
     flex-grow: 1;
     padding: 1rem;
     background: #f8f8f8;
+    overflow-y: auto;
 }
 
 #search-and-profile {
