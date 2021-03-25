@@ -52,6 +52,7 @@ export default {
     .search-btn {
         background: #4b19d6;
         .search-btn-icon {
+            display: none;
             color: #ffffff;
         }
     }
@@ -68,18 +69,19 @@ export default {
     #search-input-cover {
         padding: 8px 15px;
 
+        .search-icon {
+            display: none;
+        }
+
         .search-input {
             padding: 0;
             margin: 0 0.5rem;
         }
-    }
 
-    .search-icon {
-        display: none;
-    }
-
-    .search-btn {
-        .search-btn-text { display: none }
+        .search-btn {
+            .search-btn-text { display: none; }
+            .search-btn-icon { display: block; }
+        }
     }
 }
 </style>
