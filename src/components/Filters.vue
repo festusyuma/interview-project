@@ -101,8 +101,8 @@ export default {
     margin-top: 10px;
 
     #filters {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
 
         .filter {
             margin-bottom: 10px;
@@ -110,9 +110,33 @@ export default {
     }
 }
 
+@media screen and (max-width: 1170px) {
+    #filters-cover {
+        #filters {
+            grid-template-columns: auto auto auto auto;
+        }
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #filters-cover {
+        #filters {
+            grid-template-columns: auto auto auto;
+        }
+    }
+}
+
 @media screen and (max-width: 600px) {
     #filters-cover {
         padding: 0.25rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #filters-cover {
+        #filters {
+            grid-template-columns: auto auto;
+        }
     }
 }
 </style>
